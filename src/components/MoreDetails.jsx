@@ -6,7 +6,7 @@ export default function MoreDetails({ data }) {
   const { current, location } = data;
 
   return (
-    <div className="p-4 bg-white/10 rounded-2xl shadow-lg backdrop-blur-md w-full max-w-md text-white space-y-3">
+    <div className="p-4 bg-white/10 rounded-2xl shadow-lg backdrop-blur-md w-full max-w-md text-black space-y-3">
       <h3 className="text-lg font-bold mb-1">Advanced Details</h3>
 
       <div className="text-sm opacity-80">

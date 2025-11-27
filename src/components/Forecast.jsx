@@ -4,7 +4,7 @@ export default function Forecast({ forecast }) {
   if (!forecast || !forecast.length) return null;
 
   return (
-    <div className="p-4 bg-white/10 rounded-2xl shadow-lg backdrop-blur-md w-full max-w-md text-white">
+    <div className="p-4 bg-white/10 rounded-2xl shadow-lg backdrop-blur-md w-full max-w-md text-black">
       <h3 className="font-bold mb-3">3-Day Forecast</h3>
       <div className="grid grid-cols-3 gap-3">
         {forecast.map((d, i) => (

@@ -44,7 +44,7 @@ export default function SearchBar({ onSearch }) {
           value={locationInput}
           onChange={(e) => setLocationInput(e.target.value)}
           placeholder="Enter city or zip code"
-          className="flex-1 p-2 rounded-lg bg-white/20 text-white placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="flex-1 p-2 rounded-lg bg-white/20 text-black placeholder-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <button
           type="submit"

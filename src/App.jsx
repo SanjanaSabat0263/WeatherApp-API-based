@@ -79,14 +79,43 @@ export default function App() {
     }
   };
 
+  // NEW: background based on current condition
+  const getBackgroundClass = () => {
+    if (!weatherData) {
+      // default background image when nothing is searched yet
+      
+      return "min-h-screen bg-[url('https://www.maximum-inc.com/wp-content/uploads/2022/01/Meteorology.jpeg')] bg-cover bg-center p-4 text-black";
+    }
+
+    const text = weatherData.current.condition.text.toLowerCase();
+    if (text.includes("thunder") || text.includes("storm") || text.includes("lightning")) {
+      return "min-h-screen bg-[url('https://media.bom.gov.au/social/upload/images/lightning-at-adelaide-airport-rowland-beardsell-2015-calendar-resize.jpg')] bg-cover bg-center p-4 text-black";
+    }
+
+    if (text.includes("rain") || text.includes("drizzle") || text.includes("shower")) {
+      return "min-h-screen bg-[url('https://samitivej-prod-new-website.s3.ap-southeast-1.amazonaws.com/public/uploads/descriptions/eeece6f94472507eff65a7277be708b6.jpg')] bg-cover bg-center p-4 text-black";
+    }
+
+    if (text.includes("snow") || text.includes("blizzard") || text.includes("sleet")) {
+      return "min-h-screen bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoisgrwF5oasYjzBT04c12ABMxGDYajYDuPQ&s')] bg-cover bg-center p-4 text-black";
+    }
+
+    if (text.includes("cloud") || text.includes("overcast") || text.includes("fog")) {
+      return "min-h-screen bg-[url('https://www.rochesterfirst.com/wp-content/uploads/sites/66/2021/04/sky-1107579_1920.jpg?w=900')] bg-cover bg-center p-4 text-black";
+    }
+
+    // clear / sunny / default
+    return "min-h-screen bg-[url('https://images.stockcake.com/public/3/5/0/35000166-188c-4bbd-ac7d-0941be325558_large/sunny-cloud-filled-sky-stockcake.jpg')] bg-cover bg-center p-4 text-black" ;
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-400 to-purple-600 p-4 text-white">
+    <div className={getBackgroundClass()}>
       <h1 className="text-center text-4xl font-bold mb-6">CloudMind Weather</h1>
 
       <SearchBar onSearch={handleSearch} />
 
       {error && (
-        <div className="mt-4 p-3 bg-red-500/70 rounded-xl max-w-md mx-auto text-sm">
+        <div className="mt-4 p-3 bg-red-500/70 rounded-xl max-w-md mx-auto text-sm text-white">
           {error}
         </div>
       )}

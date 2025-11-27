@@ -18,7 +18,7 @@ export default function WeatherCard({ data }) {
   } = data;
 
   return (
-    <div className="p-5 bg-white/10 rounded-2xl shadow-lg backdrop-blur-md w-full max-w-md text-white">
+    <div className="p-5 bg-white/10 rounded-2xl shadow-lg backdrop-blur-md w-full max-w-md text-black">
       {/* Location */}
       <h2 className="text-xl font-bold">{location.name}</h2>
       <p className="text-sm opacity-80">

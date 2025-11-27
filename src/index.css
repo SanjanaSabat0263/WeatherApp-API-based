@@ -7,3 +7,41 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
+/* Default app background */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+/* Sunny / clear */
+.app-sunny {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7x0aBFFidzUH1ACqtSImiqWZ6J_higQ4K19K4U5D5G-y-ZrlKw2kM2hbHv-7JTkMPkg&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Rainy */
+.app-rainy {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiwzSVsS4B-LiWZxSZMUK9PamGDmmleRgvAA&s");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cloudy / overcast */
+.app-cloudy {
+  background-image: url("https://img.freepik.com/free-photo/black-rain-abstract-dark-power_1127-2380.jpg?semt=ais_hybrid&w=740&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Snowy */
+.app-snowy {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHp6sR8ilqawrXuivQB1IZksn8skQ-BPw0HQ&s");
+  background-size: cover;
+  background-position: center;
+
+}
+
