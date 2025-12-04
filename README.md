@@ -1,4 +1,5 @@
-CloudMind Weather
+         CloudMind Weather
+
 CloudMind Weather is a modern React weather application that delivers real‑time climate information with a clean, distraction‑free interface. 
 It is powered by WeatherAPI and styled with Tailwind CSS for a responsive, fast user experience.
 
