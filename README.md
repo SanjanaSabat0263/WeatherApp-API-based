@@ -1,16 +1,58 @@
-# React + Vite
+# ☁️ CloudMind Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CloudMind Weather is a modern **React-based weather dashboard** that provides real-time weather information along with **AI-style suggestions** based on current conditions.  
+The application dynamically changes its **background image according to weather conditions** (sunny, rainy, cloudy, snow, storm) to give users a rich visual experience.
 
-Currently, two official plugins are available:
+This project is developed as **Project 1 – Frontend API-Based Application (Month 1)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+CloudMind Weather allows users to:
+- Search weather by **city name**
+- Fetch real-time weather data using a **third-party API**
+- View temperature, humidity, wind speed, visibility, pressure, and more
+- Receive **AI-like suggestions** based on weather conditions
+- Experience **dynamic backgrounds** depending on weather type
 
-## Expanding the ESLint configuration
+This is a **client-side only React application** with no backend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Learning Objectives
+
+Through this project, the following skills are practiced:
+
+- React functional components
+- React Hooks (`useState`)
+- API consumption using `fetch`
+- Handling async operations
+- Managing loading, error, and success states
+- Component-based UI architecture
+- Environment configuration and API security concepts
+- Responsive and dynamic UI design using Tailwind CSS
+- Git & GitHub workflow
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---------|--------|
+| React.js | Frontend framework |
+| JavaScript (ES6+) | Application logic |
+| Tailwind CSS | Styling and responsive design |
+| WeatherAPI.com | Weather data provider |
+| Vite | Development & build tool |
+| Git & GitHub | Version control |
+
+---
+
+## 🌐 API Information
+
+**API Provider:** WeatherAPI.com  
+**API Type:** REST API  
+**Response Format:** JSON  
+
+### Endpoint Used
